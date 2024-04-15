@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+.main {
+     width: 100vw;
+     height: 80vh;
+     background-color: #69bdb7;
+}
+.text-main {
+    position: relative;
+    text-align: center;
+    top: 25%;
+    color: #fff;
+}
+.main h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'San Serif';
+}
+.main p {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    position: relative;
+}
+.main img {
+    width: 250px;
+    height: 250px;
+}
+.portfolio {
+    height: 80vh;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rosybrown;
+}
+.portfolio h2 {
+font-size: 3em;
+color: #234e3b;
+font-family: Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.container {
+    margin: 100px auto auto auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    margin: 0 40px;
+}
+/*.card p {
+    text-align: center;
+    font-size: 2.5em;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #000;
+}*/
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 240px;
+    position: relative;
+    
+    color: #481d1d;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+.nav_link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+
+    background-color: #211111;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color: #ab933c;
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+.card img {
+    width: 250px;
+    height: 250px;
+    margin: 10px auto 20px;
+    display: block;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section__header {
+    width: 100%;
+    min-width: 950px;
+    margin: 0 auto 40px;
+    
+    text-align: center;
+}
+.section__suptitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+
+    background-color: #f38181;
+}
+
+.section__text {
+    font-size: 15px;
+    color: #999;
+}
+.section1 {
+    width: 100vw;
+     height: 140vh;
+     background-color: #78769c;
+}
+.section__header1 {
+    width: 100%;
+    min-width: 950px;
+    margin: 0 auto 40px;
+    
+    text-align: center;
+}
+.section__suptitle1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+.section__title1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+.section__title1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+
+    background-color: #f38181;
+}
+.container1 {
+    margin: 100px auto auto auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section__text1 {
+    font-size: 15px;
+    color: #999;
+}
+/* Grid контейнер*/
+.portfolio-section {
+    display: grid; /* отобразить элементы как гриды*/
+    margin: 10px; /*отступы по краям*/
+    grid-template-columns: repeat(4, 1fr); /*шаблон для колонок*/
+    grid-gap: 10px; /*отступы между ячейками*/
+    
+}
+.portfolio-item {
+    display: grid; /* включение гридов для центрирования текста */
+    min-height: 32vh; /* высота портфолио занимает один экран */
+    background-size: cover; /* растянуть картинку на весь блок */
+    background-position: center; /* расположение картинки в центре блока */
+    text-align: center; /* горизонтальное выравнивание текста */
+    align-content: center; /* вертикальное выравнивание текста */
+}
+.portfolio-item:nth-child(1) {
+    grid-column: 1/3; /* 1-ый элемент занимает две горизонтальных ячейки */
+}
+.portfolio-item:nth-child(5) {
+    grid-column: 2/4; /* 5-ый элемент занимает две горизонтальных ячейки */
+}
+.portfolio-item:nth-child(6) {
+    grid-column: 4;
+    grid-row: 2/4; /* 6-ый элемент занимает две вертикальные ячейки */
+}
+/* Подвал он же footer */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;/*обнуление отступов*/
+    padding: 0;/*обнуление полей*/
+    box-sizing: border-box;/*метод расчета размеров бокса*/
+    font-family: 'Poppins', sans-serif;/*название шрифта*/
+}
+body {
+    display: flex;/*флексбокс сетка*/
+    flex-direction: column;/*направление главной оси*/
+    justify-content: flex-end;/*элементы в конце контейнера*/
+    min-height: 100vh;
+}
+footer{
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background: #3586ff;/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;/*отступ сверху*/
+}
+footer .wave{
+    position: absolute;/*абсолютное позиционирование*/
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);/*картинка волны*/
+    background-size: 1000px 100px;/*ширина и высота волны*/
+}
+.social,
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social li,
+.menu li{
+    list-style: none;/*удалить черные маркеры*/
+}
+.social li a {
+    font-size: 2em;/*размер иконок*/
+    color: #fff;/*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    transition: 0.5s;/*плавный переход*/
+}
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #fff;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+.menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+
